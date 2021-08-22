@@ -14,10 +14,10 @@ const SubscribeInteractive = () => {
 
   return (
     <CoffeeProvider>
-    <div className="flex">
+    <div className="flex my-28 md:px-20 space-x-48 md:mx-28">
       <Sidebar handleClick={handleClick} />
       <MainSection />
-      <div></div>
+      
     </div>
     </CoffeeProvider>
   )

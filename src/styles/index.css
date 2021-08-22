@@ -43,9 +43,18 @@ code {
   color: #FDD6BA;
 }
 .pale-orange-bgcolor {
-  background-color: #FDD6BA;
+  background-color: #aaa39f;
 }
 
+.select-box-bg-gray {
+  background-color: #f4f1ea;
+  color: #333D4B;
+}
+
+.select-box-bg-teal {
+  background-color: #0E8784;
+  color: #FEFCF7;
+}
 
 @tailwind base;
 @tailwind components;

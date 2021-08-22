@@ -16,7 +16,7 @@ const Sidebar = ({ handleClick }) => {
   return (
       
     
-    <div className="md:px-20 my-28 flex flex-col font-black">
+    <div className=" flex flex-col font-black w-1/4">
       <div className="flex py-2 cursor-pointer   border-b-2"
         onClick={() => clicker()}>
         <h3 className="">01</h3>
