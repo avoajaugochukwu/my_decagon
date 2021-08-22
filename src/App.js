@@ -1,11 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import { Fragment } from 'react';
+import Subscribe from './pages/Subscribe';
 
 function App() {
   return (
-    <div className="">
-      Hi there
-    </div>
+    <Fragment>
+      <Subscribe />
+    </Fragment>
   );
 }
 
