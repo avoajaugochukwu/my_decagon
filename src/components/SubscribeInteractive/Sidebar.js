@@ -1,22 +1,21 @@
 import React, { useContext } from 'react'
-import { CoffeeContext } from '../../context/CoffeeContext'
+import { CoffeeContext } from '../../contexts/CoffeeContext'
 
 
 const Sidebar = ({ handleClick }) => {
   const {coffeeOrder, updatePreference} = useContext(CoffeeContext)
-  // const { updateOrder } = useContext(CoffeeContext)
 
   const clicker = () => {
     updatePreference('Coffee')
   }
   
 
-  console.log(coffeeOrder)
+  // console.log(coffeeOrder)
   
   return (
       
     
-    <div className=" flex flex-col font-black w-1/4">
+    <div className=" flex flex-col font-black md:w-1/4 w-full hidden md:block">
       <div className="flex py-2 cursor-pointer   border-b-2"
         onClick={() => clicker()}>
         <h3 className="">01</h3>

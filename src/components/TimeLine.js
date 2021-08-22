@@ -3,7 +3,7 @@ import '../styles/TimeLine.css'
 
 export default function TimeLine() {
   return (
-    <div className="timeline-container">
+    <div className="timeline-container hidden md:block">
       <ul className="timeline block">
         <li></li>
         <li></li>

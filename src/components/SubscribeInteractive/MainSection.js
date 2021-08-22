@@ -1,4 +1,5 @@
 
+import OrderSummary from "./OrderSummary"
 import BeanType from "./steps/BeanType"
 import Delivery from "./steps/Delivery"
 import Grind from "./steps/Grind"
@@ -14,6 +15,7 @@ const MainSection = () => {
       <Quantity />
       <Grind />
       <Delivery />
+      <OrderSummary />
     </div>
   )
 }
