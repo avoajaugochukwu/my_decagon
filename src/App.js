@@ -1,4 +1,4 @@
-import './App.css';
+import './styles/App.css';
 import { Fragment } from 'react';
 import Subscribe from './pages/Subscribe';
 

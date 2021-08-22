@@ -1,0 +1,16 @@
+
+
+
+
+
+#menu-toggle:checked + #menu {
+  display: block;
+}
+
+.hero-background {
+  background-image: url("../img/hero.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+

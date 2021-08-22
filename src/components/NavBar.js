@@ -3,7 +3,7 @@ import Logo from '../img/ground_cofee_logo.png'
 export default function NavBar() {
 
   return (
-      <header className="lg:px-20 px-8 bg-white flex flex-wrap items-center py-4">
+      <header className="md:px-20 px-8 bg-white flex flex-wrap items-center py-4">
         <div className="flex-1 flex justify-between items-center">
           <a href="/" className="text-xl"><img alt="Logo" className="w-1/2" src={Logo} /></a>
         </div>
