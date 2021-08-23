@@ -16,6 +16,19 @@ const Delivery = () => {
     updateDelivery(delivery)
   }
 
+  let showDeliveryOptions = false
+
+  if (coffeeOrder.grind === '') {
+    showDeliveryOptions = false
+    if (coffeeOrder.preference === 'Capsule' && coffeeOrder.quantity !== '') {
+      showDeliveryOptions = true
+    }
+  } else {
+    showDeliveryOptions = true
+  }
+
+  
+
 
   return (
     <div className="my-12 mx-8">
@@ -31,9 +44,7 @@ const Delivery = () => {
           }
         </div>
       </div>
-      <div className={`flex md:flex-row flex-col md:space-x-16 m-3 mx-auto 
-        ${(coffeeOrder.grind === '' && (coffeeOrder.preference === 'Capsule' && coffeeOrder.quantity === '') ) ? 'hidden' : 'block'}`}
-        >
+      <div className={`flex md:flex-row flex-col md:space-x-16 m-3 mx-auto ${showDeliveryOptions ? 'block' : 'hidden'}`}>
 
         <div className={`cursor-pointer p-5 my-3 rounded-md ${activeButton === 'Every week' ? 'select-box-bg-teal' : 'select-box-bg-gray'}`}
           onClick={() => handleSelect('Every week')}>

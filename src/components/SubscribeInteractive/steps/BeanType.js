@@ -31,7 +31,7 @@ const BeanType = () => {
         </div>
       </div>
 
-      <div className={`flex md:flex-row flex-col md:space-x-16 m-3 mx-auto ${coffeeOrder.preference === '' ? 'hidden' : 'block'}`}>
+      <div className={`flex md:flex-row flex-col md:space-x-16 m-3 mx-auto  ${coffeeOrder.preference === '' ? 'hidden' : 'block'}`}>
 
         <div className={`cursor-pointer p-5 my-3 rounded-md ${activeButton === 'Single Origin' ? 'select-box-bg-teal' : 'select-box-bg-gray'}`}
           onClick={() => handleSelect('Single Origin')}>
