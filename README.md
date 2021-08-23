@@ -19,7 +19,7 @@ This is a solution to the challenge
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
-Brag point! This challenge was completed in less than 12 hours. Although I was doing other things in-between. I fully utilized reacts seperation of concerns nature to create truly modular components and files that do only one thing, this makes the application easily extendable and maintainable. There are no unused variables or console logs.
+Bragging time! This challenge was completed in less than 12 hours. Although I was doing other things in-between. I fully utilized reacts seperation of concerns nature to create truly modular components and files that do only one thing, this makes the application easily extendable and maintainable. There are no unused variables or console logs.
 
 ### The challenge
 
