@@ -3,11 +3,11 @@ import TimeLine from './TimeLine'
 
 export default function Steps() {
   return (
-    <div className="md:px-20 md:mt-28 mt-16">
-      <div className="dark-grey-blue-bgcolor md:py-20 py-4 md:rounded-none rounded-3xl">
+    <div className="lg:px-20 md:px-8 px-8 lg:mt-28 mt-10">
+      <div className="dark-grey-blue-bgcolor md:py-20 py-4 md:rounded-none rounded-xl">
         <TimeLine />
 
-        <div className="flex md:flex-row flex-col md:space-x-28 md:px-40 px-12 mdpt-16 pt-6 md:text-left text-center">
+        <div className="flex md:flex-row flex-col md:space-x-6 lg:space-x-28 px-10 md:px-16 lg:px-40 px-12 pt-6 md:text-left text-center">
           <div className="md:pb-3 pb-16">
             <h2 className="pale-orange-color text-6xl font-black pb-8">01</h2>
             <h4 className="light-cream-color text-2xl font-black pb-8">Pick your coffee</h4>

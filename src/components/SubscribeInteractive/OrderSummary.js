@@ -23,7 +23,7 @@ const OrderSummary = () => {
 
 
       </div>
-      <div className="float-right mt-5">
+      <div className="float-right mt-5 mb-7">
         <ShowModal />
       </div>
     </div>

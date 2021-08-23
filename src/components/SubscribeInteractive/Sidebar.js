@@ -3,7 +3,7 @@ import React from 'react'
 
 const Sidebar = () => {  
   return (
-    <div className=" flex flex-col font-black md:w-1/4 w-full hidden md:block">
+    <div className=" flex flex-col font-black md:w-1/4 w-full hidden lg:block">
       <div className="flex py-2 cursor-pointer   border-b-2">
         <h3 className="">01</h3>
         <h3 className="ml-3">Preferences</h3>

@@ -8,7 +8,7 @@ const SubscribeInteractive = () => {
 
   return (
     <CoffeeProvider>
-      <div className="flex md:flex-row flex-col my-28 md:px-20 md:space-x-48 md:mx-28">
+      <div className="flex md:flex-row flex-col lg:my-28 md:my-12 lg:px-20 md:px-8 lg:space-x-48 md:space-x-16 lg:mx-24 md:mx-8 mt-16">
         <Sidebar />
         <MainSection />
       </div>
