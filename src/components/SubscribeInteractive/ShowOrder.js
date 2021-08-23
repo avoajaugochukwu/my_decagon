@@ -1,16 +1,14 @@
 import React, { useContext } from "react";
 import { CoffeeContext } from '../../contexts/CoffeeContext'
 
-import { validateCoffeeOrder } from "../../helpers.js/validateCoffeeOrder";
-
-import { preferenceNotCapsule, preferenceIsCapsule } from '../../helpers.js/coffeeOrderText'
+import { validateCoffeeOrder } from "../../helpers/validateCoffeeOrder";
+import { preferenceNotCapsule, preferenceIsCapsule } from '../../helpers/coffeeOrderText'
+import { getTotalPrice } from "../../helpers/deliveryComputation";
 
 export default function ShowModal() {
   const [showModal, setShowModal] = React.useState(false);
 
   const { coffeeOrder } = useContext(CoffeeContext)
-
-  
 
   const isCoffeeOrderValid = validateCoffeeOrder(coffeeOrder)
 
@@ -40,10 +38,10 @@ export default function ShowModal() {
                     Order Summary
                   </h3>
                   <button
-                    className="p-1 ml-auto bg-transparent border-0 text-black opacity-5 float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
+                    className="p-1 ml-auto border-0 text-black  float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
                     onClick={() => setShowModal(false)}
                   >
-                    <span className="bg-transparent text-black opacity-5 h-6 w-6 text-2xl block outline-none focus:outline-none">
+                    <span className="light-cream-color h-6 w-6 text-2xl block ">
                       ×
                     </span>
                   </button>
@@ -60,8 +58,11 @@ export default function ShowModal() {
                 </div>
                 {/*footer*/}
                 <div className="flex items-center justify-end p-6 rounded-b">
+                <div className="text-4xl font-black mr-12">
+                    ${ isCoffeeOrderValid ? getTotalPrice(coffeeOrder.quantity, coffeeOrder.delivery) : '' }/ mo
+                  </div>
                   <button
-                    className="dark-teal-bgcolor text-white font-black px-6 py-2 outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
+                    className="dark-teal-bgcolor  text-white font-black px-6 py-2 outline-none focus:outline-none mr-1 mb-1 rounded"
                     type="button"
                     onClick={() => setShowModal(false)}
                   >

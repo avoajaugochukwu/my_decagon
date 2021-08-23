@@ -1,6 +1,8 @@
 import React, { useState, useContext } from 'react'
 import { CoffeeContext } from '../../../contexts/CoffeeContext'
 
+import { getWeeklyPrice, getBiWeeklyPrice, getMonthPrice } from '../../../helpers/deliveryComputation'
+
 import upCaret from '../../../img/up_caret.png'
 import downCaret from '../../../img/down_caret.png'
 
@@ -51,7 +53,7 @@ const Delivery = () => {
           <h3 className="pb-4 font-black text-xl">
             Every week
           </h3>
-          <p> $7.20 per shipment. Includes free first-class shipping. </p>
+          <p> ${getWeeklyPrice(coffeeOrder.quantity)} per shipment. Includes free first-class shipping. </p>
         </div>
 
         <div className={`cursor-pointer p-5 my-3 rounded-md ${activeButton === 'Every 2 weeks' ? 'select-box-bg-teal' : 'select-box-bg-gray'}`}
@@ -59,7 +61,7 @@ const Delivery = () => {
           <h3 className="pb-4 font-black text-xl">
             Every 2 weeks
           </h3>
-          <p> $9.60 per shipment. Includes free priority shipping. </p>
+          <p> ${getBiWeeklyPrice(coffeeOrder.quantity)} per shipment. Includes free priority shipping. </p>
         </div>
 
         <div className={`cursor-pointer p-5 my-3 rounded-md ${activeButton === 'Every month' ? 'select-box-bg-teal' : 'select-box-bg-gray'}`}
@@ -67,7 +69,7 @@ const Delivery = () => {
           <h3 className="pb-4 font-black text-xl">
             Every month
           </h3>
-          <p> $12.00 per shipment. Includes free priority shipping.</p>
+          <p> ${getMonthPrice(coffeeOrder.quantity)} per shipment. Includes free priority shipping.</p>
         </div>
 
       </div>

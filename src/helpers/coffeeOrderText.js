@@ -17,7 +17,7 @@ export const preferenceNotCapsule = ({ preference, beanType, quantity, grind, de
   </h2>
     {
       type === 'checkout' &&
-      <p style={{"font-family": "arial", "color": "#83888F"}}>
+      <p style={{"fontFamily": "arial", "color": "#83888F"}}>
         Is this correct? You can proceed to checkout or go back to plan selection if something is off. 
         Subscription discount codes can also be redeemed at the checkout. 
       </p>
@@ -44,7 +44,7 @@ export const preferenceIsCapsule = ({ preference, beanType, quantity, delivery }
   </h2>
   {
       type === 'checkout' &&
-      <p style={{"font-family": "arial", "color": "#83888F"}}>
+      <p style={{"fontFamily": "arial", "color": "#83888F"}}>
         Is this correct? You can proceed to checkout or go back to plan selection if something is off. 
         Subscription discount codes can also be redeemed at the checkout. 
       </p>

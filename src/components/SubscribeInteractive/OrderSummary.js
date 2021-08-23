@@ -2,7 +2,7 @@ import React, { useContext } from 'react'
 import { CoffeeContext } from '../../contexts/CoffeeContext'
 import ShowModal from './ShowOrder'
 
-import { preferenceNotCapsule, preferenceIsCapsule } from '../../helpers.js/coffeeOrderText'
+import { preferenceNotCapsule, preferenceIsCapsule } from '../../helpers/coffeeOrderText'
 
 const OrderSummary = () => {
 

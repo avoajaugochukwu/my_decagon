@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useContext } from 'react'
+import React, { useState, useContext } from 'react'
 import { CoffeeContext } from '../../../contexts/CoffeeContext'
 
 import downCaret from '../../../img/down_caret.png'
