@@ -59,12 +59,12 @@ Continuous development would be around building more reusable components, which 
 
 ### Useful resources
 
-- [Example resource 1](https://academind.com/tutorials/testing-react-apps/) - I used this to review more testing APIs that can be incorporated into my work.
-- [Example resource 2](https://www.creative-tim.com/learning-lab/tailwind-starter-kit/documentation/react/modals/regular) - I used this to quickly bootstrap the modal for the final order.
+- [academind](https://academind.com/tutorials/testing-react-apps/) - I used this to review more testing APIs that can be incorporated into my work.
+- [creative-tim](https://www.creative-tim.com/learning-lab/tailwind-starter-kit/documentation/react/modals/regular) - I used this to quickly bootstrap the modal for the final order.
 
 ## Author
 
-- Website - [Add your name here](https://techwizerd.com)
+- Website - [techwizerd.com](https://techwizerd.com)
 
 ## Acknowledgments
 
