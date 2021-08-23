@@ -15,8 +15,6 @@ const Grind = () => {
     updateGrind(grind)
   }
 
-  console.log(coffeeOrder)
-
   return (
     <div className="my-12 mx-8">
       <div className="flex mb-3 relative">

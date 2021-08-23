@@ -56,6 +56,10 @@ code {
   color: #FEFCF7;
 }
 
+.order-text-grey {
+  color: #83888F;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
