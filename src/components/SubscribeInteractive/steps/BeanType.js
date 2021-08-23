@@ -38,7 +38,7 @@ const BeanType = () => {
           <h3 className="pb-4 font-black text-xl">
             Single Origin
           </h3>
-          <p> Distinct, high quality coffee from a specific family-owned farm </p>
+          <p>Distinct, high quality coffee from a specific family-owned farm </p>
         </div>
 
         <div className={`cursor-pointer p-5 my-3 rounded-md ${activeButton === 'Decaf' ? 'select-box-bg-teal' : 'select-box-bg-gray'}`}

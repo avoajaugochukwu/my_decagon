@@ -1,4 +1,5 @@
 const deliveryTable = {
+  // "weight: [Every week, Every 2 weeks, Every month]"
   "250g": [7.20, 9.60, 12.00],
   "500g": [13.00, 17.50, 22.00],
   "1000g": [22.00, 32.00, 42.00],
