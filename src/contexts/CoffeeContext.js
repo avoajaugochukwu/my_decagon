@@ -14,7 +14,11 @@ export function CoffeeProvider ({ children }) {
  const [ coffeeOrder, setCoffeeOrder ] = useState(initialState)
 
   const updatePreference = (preference) => {
-    setCoffeeOrder({ ...coffeeOrder, preference })
+    if (preference === 'Capsule') {
+      setCoffeeOrder({ ...coffeeOrder, preference, grind: '' })  
+    } else {
+      setCoffeeOrder({ ...coffeeOrder, preference })
+    }
   }
 
   const updateBeanType = (beanType) => {

@@ -15,11 +15,14 @@ const Grind = () => {
     updateGrind(grind)
   }
 
+  console.log(coffeeOrder)
 
   return (
     <div className="my-12 mx-8">
       <div className="flex mb-3 relative">
-        <h1 className="text-3xl font-black dark-grey-blue-color">Want us to grind them?</h1>
+        <h1 className={`text-3xl font-black 
+          ${coffeeOrder.preference === 'Capsule' ? 'dark-grey-color cursor-not-allowed' : 'dark-grey-blue-color' }`}
+          >Want us to grind them?</h1>
         <div className="pt-3 absolute top-0 right-0">
           {
             coffeeOrder.preference === ''
@@ -30,7 +33,9 @@ const Grind = () => {
           }
         </div>
       </div>
-      <div className={`flex md:flex-row flex-col md:space-x-16 m-3 mx-auto ${coffeeOrder.quantity === '' ? 'hidden' : 'block'}`}>
+      <div className={`flex md:flex-row flex-col md:space-x-16 m-3 mx-auto 
+      ${(coffeeOrder.quantity === '' || coffeeOrder.preference === 'Capsule') ? 'hidden' : 'block'}`}
+      >
 
         <div className={`cursor-pointer p-5 my-3 rounded-md ${activeButton === 'Wholebean' ? 'select-box-bg-teal' : 'select-box-bg-gray'}`}
           onClick={() => handleSelect('Wholebean')}>
