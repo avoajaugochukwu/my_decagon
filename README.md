@@ -19,7 +19,11 @@ This is a solution to the challenge
 **Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
-Bragging time! This challenge was completed in less than 12 hours. Although I was doing other things in-between. I fully utilized reacts seperation of concerns nature to create truly modular components and files that do only one thing, this makes the application easily extendable and maintainable. There are no unused variables or console logs.
+Bragging time! This challenge was completed in less than 12 hours. Although I was doing other things in-between. I fully utilized reacts seperation of concerns nature to create truly modular components and files that do only one thing, this makes the application easily extendable and maintainable. There are no unused variables or console logs. And I wrote some tests to test helper functions as well as some views. In a production application, I would have used an end-to-end testing tool like Cypress.
+
+Two things I failed to do:
+- I failed to use PropTypes for my child components that uses props
+- Also for the side bar, I did not make the side bar reactive for the current step the user is looking at.
 
 ### The challenge
 
